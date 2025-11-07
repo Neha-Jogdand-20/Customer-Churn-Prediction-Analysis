@@ -73,8 +73,6 @@ The project uses **three datasets**:
 ---
 
 ## 📊 Dashboard Preview (Screenshots)
-> Add your PNG screenshots here  
-Example Format:
 
 <img width="451" height="262" alt="image" src="https://github.com/user-attachments/assets/cefe14a0-1136-44c2-a9e7-bf7f06c882d9" />
 
