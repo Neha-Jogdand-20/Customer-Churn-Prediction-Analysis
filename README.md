@@ -1,9 +1,14 @@
 # Customer Churn Prediction & Retention Analysis
 
 This project focuses on identifying customers who are likely to churn and developing retention strategies based on behavioral patterns, service usage, financial data, and customer feedback.  
-The project demonstrates end-to-end data analytics covering **Data Cleaning, SQL Operations, Power BI Dashboarding, and Business Insights.**
+The project demonstrates end-to-end data analytics covering **Data Cleaning, SQL Operations, Power BI Dashboarding, Machine Learning Model Training and Business Insights.**
 
 ---
+
+## 🔍 Project Overview
+
+The goal of this project was to **predict customer churn** (whether a customer will discontinue the service) and help the business understand **why churn is happening** and **how to reduce it**.
+
 
 ## 🎯 Problem Statement
 Telecom and subscription-based businesses lose a significant number of customers every month.  
@@ -29,7 +34,7 @@ The project uses **three datasets**:
 
 | Table Name | Description | Source |
 |-----------|-------------|--------|
-| `customer_churn` | Main customer demographic and subscription data | Kaggle |
+| `customer_churn` | Main customer demographic and subscription data | Created In Python  |
 | `payment_info` | Billing region & total amount spent | SQL-created |
 | `customer_feedback` | Feedback & complaint records | SQL-created |
 
@@ -38,11 +43,12 @@ The project uses **three datasets**:
 ## 🔧 Tools & Technologies Used
 | Category | Tools |
 |--------|-------|
-| Programming | Python (Pandas, NumPy) |
+| Programming | Python (Pandas, NumPy,sklearn,matplotlib,seaborn) |
 | Database | MySQL / SQL Joins / Aggregations |
 | Visualization | Power BI |
 | File Formats | CSV, XLSX, PDF |
 | Version Control | Git & GitHub |
+|Machine Learning|xgboost |
 
 ---
 
@@ -51,7 +57,8 @@ The project uses **three datasets**:
 ### 1️⃣ Data Cleaning (Python / Pandas)
 - Removed missing & inconsistent values  
 - Created new features for contract type, service usage patterns  
-- Exported cleaned dataset for SQL & BI  
+- Exported cleaned dataset for SQL & BI
+
 
 ### 2️⃣ Data Storage & SQL Analysis
 - Created tables in MySQL  
@@ -69,6 +76,14 @@ The project uses **three datasets**:
   - Feedback Score vs Churn Rate
   - Churn by Region (Map Chart)
   - Complaint Count vs Churn
+
+### 🤖 Machine Learning Model Used — XGBoost Classifier
+
+We selected **XGBoost (Extreme Gradient Boosting)** as the final model due to its ability to handle:
+- Non-linear relationships
+- Mixed categorical + numerical features
+- Imbalanced churn label distribution
+- Superior predictive performance compared to Logistic Regression & Random Forest
 
 ---
 
